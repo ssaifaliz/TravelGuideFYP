@@ -1,0 +1,80 @@
+.destinationSection {
+  background: url(../../assets/hpToursBg.jpg) center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding: 40px 0;
+  .mainHeading {
+    color: #f7943c;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #f7943c;
+    width: 32%;
+    margin: auto;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+  .txt {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 1.8;
+    padding-bottom: 20px;
+    font-family: "Gentium Book Basic", serif;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+  .destinationImage1 {
+    background-image: url(../../assets/20213561629259.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 400px;
+  }
+  .destinationImage2 {
+    background-image: url(../../assets/2022269203541846.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 400px;
+  }
+  .destinationImage3 {
+    background-image: url(../../assets/202230515175025.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 400px;
+  }
+  .destinationImage4 {
+    background-image: url(../../assets/202246085918477.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    height: 400px;
+  }
+  .txtCountryCity {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-bottom: 1px solid #f7943c;
+    &:hover {
+      background: none;
+    }
+    &::after {
+      content: "";
+      border-bottom: 2px solid #f7943c;
+    }
+  }
+}

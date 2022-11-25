@@ -1,0 +1,63 @@
+.testimonialsSection {
+  background-color: #f7f7f7;
+  padding: 30px 50px;
+  @media only screen and (max-width: 700px) {
+    padding: 0px;
+  }
+
+  .mainHeading {
+    color: #f7943c;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #f7943c;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+  .w-80 {
+    width: 80%;
+    margin: auto;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  img {
+    border-radius: 50%;
+  }
+  .txtReviews {
+    font-family: "Gentium Book Basic", serif;
+    font-style: italic;
+    width: 80%;
+    padding-top: 20px;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .align-center-item{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}

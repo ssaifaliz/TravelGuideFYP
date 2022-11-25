@@ -1,0 +1,98 @@
+.blogSection {
+  padding: 40px 0;
+
+  .mainHeading {
+    color: #f7943c;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #f7943c;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  }
+  .blogTxt {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    padding-bottom: 20px;
+    font-family: "Gentium Book Basic", serif;
+  }
+  .blogImages {
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 0;
+    }
+  }
+  .blogCardInfo {
+    padding: 15px 15px 20px;
+    h3 {
+      position: relative;
+      font-size: 18px;
+      font-size: 1.125rem;
+      font-weight: 700;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 180px;
+        height: 5px;
+        border-bottom: 2px solid #f7943c;
+      }
+      &:hover {
+        color: #70ab43;
+      }
+    }
+    p {
+      font-family: "Gentium Book Basic", serif;
+      padding-bottom: 5px;
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: inline-block;
+      border-bottom: 2px solid #70ab43;
+      letter-spacing: 0.05em;
+      color: #70ab43;
+      cursor: pointer;
+      &:hover {
+        color: #588635;
+      }
+    }
+  }
+  .blogBtn {
+    text-align: center;
+    button {
+      border-radius: 25px;
+      background-clip: padding-box;
+      position: relative;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      background: #f7943c;
+      min-width: 100px;
+      text-align: center;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 1.2;
+      text-transform: uppercase;
+      padding: 13px 25px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.1em;
+    }
+  }
+}

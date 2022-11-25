@@ -1,0 +1,34 @@
+.Footer {
+  .siteFooter {
+    background-color: black;
+    padding: 40px 0;
+    .logImage {
+      width: 70%;
+    }
+    p {
+      color: white;
+      margin-left: 10px;
+      cursor: pointer;
+      &:hover{
+        color: #f7943c;
+      }
+    }
+    h6 {
+      color: #aaa;
+    }
+  }
+  .copyRights {
+    background: #3a3a3a;
+    padding: 10px 0 ;
+    p {
+      font-size: 0.75rem;
+      color: #fff;
+      line-height: 1.8;
+      margin: 0;
+      font-family: "Gentium Book Basic", serif;
+      &:hover{
+        color: #f7943c;
+      }
+    }
+  }
+}

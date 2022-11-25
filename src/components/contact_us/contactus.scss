@@ -1,0 +1,82 @@
+.contactSection {
+  background: url(../../assets/footer-contact-bg.png) center 20px no-repeat
+    #f3f3f3;
+  padding: 40px 0;
+  text-align: center;
+  .followUs {
+    width: 50%;
+    margin: auto;
+    h4 {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .socialIcons {
+      display: flex;
+      margin: 0 0 35px;
+      justify-content: center;
+      align-items: center;
+      .icons {
+        font-size: 35px;
+        padding: 0px 15px;
+        color: #f7943c;
+      }
+    }
+    h3 {
+      font-size: 26px;
+      font-size: 1.625rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 180px;
+        height: 10px;
+        border-bottom: 2px solid #f7943c;
+        margin: 0 auto;
+      }
+    }
+    p {
+      margin: 0;
+      line-height: 1.8;
+      padding-bottom: 20px;
+      font-family: "Gentium Book Basic", serif;
+      font-size: 1.125rem;
+    }
+    .followUsBtn {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 50px;
+      button {
+        transition: 0.5s ease;
+        border-radius: 25px;
+        background-clip: padding-box;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        background: #f7943c;
+        min-width: 100px;
+        text-align: center;
+        font-size: 14px;
+        font-size: 0.875rem;
+        line-height: 1.2;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 13px 25px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.1em;
+      }
+      .marginLeft{
+        margin-left: 20px;
+      }
+    }
+  }
+}
