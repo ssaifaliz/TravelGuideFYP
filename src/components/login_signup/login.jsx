@@ -1,11 +1,20 @@
 import React from "react";
 import "./login.scss";
 import Modal from "react-bootstrap/Modal";
-import { FaEnvelope, FaLock, FaUserAlt ,FaGlobeAfrica, FaCity, FaRegAddressBook, FaMedal, FaPhoneAlt} from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLock,
+  FaUserAlt,
+  FaGlobeAfrica,
+  FaCity,
+  FaRegAddressBook,
+  FaMedal,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const Login = (props) => {
   const [showSignup, setShowSignup] = React.useState(false);
-  if(props.modalname === 'traveler'){
+  if (props.modalname === "traveler") {
     return (
       <Modal
         dialogClassName="my-modal"
@@ -74,7 +83,7 @@ const Login = (props) => {
               </div>
               <input type="text" placeholder="Enter Password" />
             </div>
-            
+
             <div className="hrefLink" onClick={() => setShowSignup(false)}>
               Login
             </div>
@@ -86,7 +95,7 @@ const Login = (props) => {
       </Modal>
     );
   }
-  if(props.modalname === 'agent'){
+  if (props.modalname === "agent") {
     return (
       <Modal
         dialogClassName="my-modal"
@@ -176,7 +185,7 @@ const Login = (props) => {
               </div>
               <input type="text" placeholder="Enter Password" />
             </div>
-            
+
             <div className="hrefLink" onClick={() => setShowSignup(false)}>
               Login
             </div>
@@ -188,7 +197,7 @@ const Login = (props) => {
       </Modal>
     );
   }
-  if(props.modalname === 'guide'){
+  if (props.modalname === "guide") {
     return (
       <Modal
         dialogClassName="my-modal"
@@ -278,7 +287,7 @@ const Login = (props) => {
               </div>
               <input placeholder="Enter your Phone Number" />
             </div>
-            
+
             <div className="label">Email</div>
             <div class="search-icon">
               <div class="icon">
@@ -293,7 +302,7 @@ const Login = (props) => {
               </div>
               <input type="text" placeholder="Enter Password" />
             </div>
-            
+
             <div className="hrefLink" onClick={() => setShowSignup(false)}>
               Login
             </div>
@@ -305,7 +314,6 @@ const Login = (props) => {
       </Modal>
     );
   }
-  
 };
 
 export default Login;
