@@ -1,0 +1,87 @@
+.destinationCard {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 2px 2px rgb(0 0 0 / 5%),
+    0 4px 4px rgb(0 0 0 / 5%), 0 6px 8px rgb(0 0 0 / 5%),
+    0 8px 16px rgb(0 0 0 / 5%);
+  border-radius: 0.5rem;
+  transition: transform 0.13s ease-in-out;
+  transform: translateZ(0);
+  .TopSearchCard {
+    color: #fff;
+    height: 100%;
+    padding: 1.25rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-size: cover;
+    background-color: grey;
+    overflow: hidden;
+    min-height: 302px;
+    border-radius: 0.5rem;
+    .Details {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      z-index: 1;
+      flex: 1 0 auto;
+      h3 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        white-space: pre-line;
+        max-height: 2.5rem;
+        margin-bottom: 1rem;
+        font-family: Graphik,Helvetica,Arial Black,Arial,Sans-Serif!important;
+      }
+      .Footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        min-height: 3rem;
+        img {
+          border-radius: 100%;
+          border: 2px solid #fff;
+          background: #fff;
+          width: 3rem;
+          height: 3rem;
+        }
+        .TopSearchCardDetails {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 1rem;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 1rem;
+          white-space: pre-wrap;
+          flex: 1 1 auto;
+        }
+        .ExploreButton {
+          border: 1px solid #fff;
+          border-radius: 1.5rem;
+          padding: 0 1rem;
+          line-height: 1rem;
+          background: rgba(0, 0, 0, 0.3);
+          font-size: 0.6875rem;
+          font-weight: 600;
+          order: 2;
+          flex: 1 0 5rem;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .ImageContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    img {
+      opacity: 1;
+      transition: opacity 0.3s ease 0s;
+      width: 100%;
+    }
+  }
+}

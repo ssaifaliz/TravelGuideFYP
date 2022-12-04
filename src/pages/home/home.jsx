@@ -8,7 +8,7 @@ import {
   Blog,
   Contactus,
   Footer,
-} from "../../components";
+} from "../../container";
 import "./home.scss";
 
 const Home = () => (

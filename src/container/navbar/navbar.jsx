@@ -5,7 +5,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillCartFill, BsFillPersonFill } from "react-icons/bs";
-import Login from "../login_signup/login";
+import Login from "../../components/login_signup/login";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

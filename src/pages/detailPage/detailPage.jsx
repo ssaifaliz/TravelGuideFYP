@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Contactus as ContactUs, Footer, Navbar } from "../../components";
+import { Contactus as ContactUs, Footer, Navbar } from "../../container";
 import FormSection from "./components/formSection";
 import LeftSection from "./components/leftSection";
 import Tours from "./components/tours";
