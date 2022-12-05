@@ -122,4 +122,5 @@ const WalkingTour = () => (
   </div>
 );
 
+
 export default WalkingTour;
