@@ -1,9 +1,16 @@
 import React from "react";
-import { Navbar, Footer, Contactus, TourDetails ,AllTourCarousel } from "../../container";
+import {
+  Navbar,
+  Footer,
+  Contactus,
+  TourDetails,
+  AllTourCarousel,
+} from "../../container";
 import Carousel from "react-multi-carousel";
 import "./walking-tour.scss";
 import { ProfileCard } from "../../components/cards";
-
+import WalkingTourWorldWide from "./components/walkingTourWorldWide";
+import ReviewSection from "./components/reviewSection";
 
 const responsive = {
   superLargeDesktop: {
@@ -80,32 +87,33 @@ const WalkingTour = () => (
     <Navbar />
     <div className="walkingTour">
       <TourDetails />
-      <AllTourCarousel noOfCards={2}/>
+      <AllTourCarousel noOfCards={2} />
       <AllTourCarousel noOfCards={3} />
       <AllTourCarousel noOfCards={5} />
+      <WalkingTourWorldWide />
       <div>
-      <div className="container allTourCarousel">
-      <div className="Header">
-        <h1>Explore with a local of your choice</h1>
-        <p>Learn about their personal stories, and find out how you can explore together</p>
-      </div>
-      <div className="carousel">
-        <Carousel responsive={responsive} infinite="true">
-          {
-            LocalsChoice.map((each, index) => (
-              <div key={index} style={{ padding: "10px" }}>
-                  <ProfileCard
-                    imgLink={each.imgLink}
-                    heading={each.heading}
-                  />
-              </div>
-            ))}
-        </Carousel>
+        <div className="container allTourCarousel">
+          <div className="Header">
+            <h1>Explore with a local of your choice</h1>
+            <p>
+              Learn about their personal stories, and find out how you can
+              explore together
+            </p>
+          </div>
+          <div className="carousel">
+            <Carousel responsive={responsive} infinite="true">
+              {LocalsChoice.map((each, index) => (
+                <div key={index} style={{ padding: "10px" }}>
+                  <ProfileCard imgLink={each.imgLink} heading={each.heading} />
+                </div>
+              ))}
+            </Carousel>
+          </div>
+        </div>
       </div>
     </div>
-      </div>
-      
-    </div>
+      <WalkingTourWorldWide />
+      <ReviewSection />
     <Contactus />
     <Footer />
   </div>
