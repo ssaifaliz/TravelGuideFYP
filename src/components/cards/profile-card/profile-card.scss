@@ -1,29 +1,23 @@
-.destinationCard {
+.ProfileCard {
   .CardDetails {
     height: 320px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-end;
+    text-align: center;
     .cardHeading {
       p {
         font-size: 20px;
         font-weight: 600;
       }
       h1 {
-        font-size: 30px;
+        font-size: 50px;
         font-family: Graphik, Helvetica, Arial Black, Arial, Sans-Serif !important;
         font-weight: 800;
       }
     }
     .cardTxt {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      img {
-        border-radius: 50px;
-        width: 60px;
-        height: 60px;
-      }
       p {
         font-size: 15px;
         font-weight: 600;
