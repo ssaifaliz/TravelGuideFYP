@@ -17,31 +17,31 @@ const AllTourCarousel = (props) => {
       id: 1,
       imgLink:
         "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
-      heading: "foodies",
+      heading: "Families",
     },
     {
       id: 1,
       imgLink:
         "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Night_owls-optimized",
-      heading: "foodies",
+      heading: "Night Owls",
     },
     {
       id: 1,
       imgLink:
         "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/History_Buffs-optimized",
-      heading: "foodies",
+      heading: "History Buffs",
     },
     {
       id: 1,
       imgLink:
         "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
-      heading: "foodies",
+      heading: "Newbies",
     },
     {
       id: 1,
       imgLink:
         "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
-      heading: "foodies",
+      heading: "Families",
     },
     {
       id: 1,
@@ -53,7 +53,7 @@ const AllTourCarousel = (props) => {
       id: 1,
       imgLink:
         "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
-      heading: "foodies",
+      heading: "Newbies",
     },
   ];
   const popularDestination = [
@@ -162,6 +162,7 @@ const AllTourCarousel = (props) => {
                     showImage={props.noOfCards}
                     imgLink={each.imgLink}
                     heading={each.heading}
+                    seeMore={false}
                   />
                 )}
               </div>

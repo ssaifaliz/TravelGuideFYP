@@ -12,12 +12,12 @@ const ProfileCard = (props) => {
         <Card.ImgOverlay>
           <div className="CardDetails">
             <div className="cardHeading">
-              <p>Withlocals for</p>
+              <p>{props.seeMore?'Hello I am':'Withlocals for'}</p>
               <h1>{props.heading}</h1>
             </div>
             <div className="cardTxt">
               <p>Home Dinners • Local Delicacies • Food Markets</p>
-              <span className="ExploreButton">Explore</span>
+              <span className="ExploreButton">{props.seeMore?'See more':'Explore'}</span>
             </div>
           </div>
         </Card.ImgOverlay>
