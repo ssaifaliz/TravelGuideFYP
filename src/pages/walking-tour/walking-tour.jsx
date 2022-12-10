@@ -9,11 +9,8 @@ import {
 import Carousel from "react-multi-carousel";
 import "./walking-tour.scss";
 import { ProfileCard } from "../../components/cards";
-<<<<<<< HEAD
 import WalkingTourWorldWide from "./components/walkingTourWorldWide";
 import ReviewSection from "./components/reviewSection";
-=======
->>>>>>> 02dbbed4b35018b1f4505a54c389067f916fa7d8
 
 const responsive = {
   superLargeDesktop: {
