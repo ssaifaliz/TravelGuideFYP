@@ -7,12 +7,12 @@ import {
   AllTourCarousel,
 } from "../../container";
 import Carousel from "react-multi-carousel";
-import "./walking-tour.scss";
+import "./food-tour.scss";
 import { ProfileCard } from "../../components/cards";
 import WalkingTourWorldWide from "./components/walkingTourWorldWide";
 import ReviewSection from "./components/reviewSection";
-=======
->>>>>>> 02dbbed4b35018b1f4505a54c389067f916fa7d8
+import foodBanner from "../../assets/food tour/food-banner.webp"
+
 
 const responsive = {
   superLargeDesktop: {
@@ -87,6 +87,30 @@ const allTourCards = [
   {
     id: 1,
     imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
+    heading: "Newbies",
+  },
+  {
+    id: 1,
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
+    heading: "Families",
+  },
+  {
+    id: 1,
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Foodies-optimized",
+    heading: "foodies",
+  },
+  {
+    id: 1,
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
+    heading: "Newbies",
+  },
+  {
+    id: 1,
+    imgLink:
       "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Foodies-optimized",
     heading: "foodies",
   },
@@ -108,47 +132,9 @@ const allTourCards = [
       "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/History_Buffs-optimized",
     heading: "History Buffs",
   },
-  {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
-    heading: "Newbies",
-  },
-  {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
-    heading: "Families",
-  },
-  {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Foodies-optimized",
-    heading: "foodies",
-  },
-  {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
-    heading: "Newbies",
-  },
+  
 ];
 const popularDestination = [
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/portugal/Lisbon",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/3cd4a790944dbfb2fb9970a79a61be72",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/thailand/Chang_Mai",
-    heading: "foodies",
-  },
   {
     imgLink:
       "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/italy/Florence",
@@ -164,8 +150,40 @@ const popularDestination = [
       "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/spain/Javea/Javea9",
     heading: "foodies",
   },
+  {
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/portugal/Lisbon",
+    heading: "foodies",
+  },
+  {
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/3cd4a790944dbfb2fb9970a79a61be72",
+    heading: "foodies",
+  },
+  {
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/thailand/Chang_Mai",
+    heading: "foodies",
+  },
+ 
 ];
 const topTour = [
+ 
+  {
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/f5213c4f0f00fd3510ea7881bffdf7da",
+    heading: "foodies",
+  },
+  {
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/cbd123c5b59d595c251c55dec26db0f8",
+    heading: "foodies",
+  },
+  {
+    imgLink:
+      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/f5213c4f0f00fd3510ea7881bffdf7da",
+    heading: "foodies",
+  },
   {
     imgLink:
       "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/cbd123c5b59d595c251c55dec26db0f8",
@@ -181,32 +199,17 @@ const topTour = [
       "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/2966ef4d20b2a9bfafd3fda3a35cbdde",
     heading: "foodies",
   },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/f5213c4f0f00fd3510ea7881bffdf7da",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/cbd123c5b59d595c251c55dec26db0f8",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/f5213c4f0f00fd3510ea7881bffdf7da",
-    heading: "foodies",
-  },
 ];
 
-const WalkingTour = () => (
+const FoodTour = () => (
   <div>
     <Navbar />
-    <div className="walkingTour">
+    <div className="foodTour">
       <div className="Section1">
-        <TourDetails heading='All Walking Tours worldwide' img={foodBanner}/>
+        <TourDetails  heading='All Food Tours worldwide' img={foodBanner}/>
       </div>
       <div className="Section2">
-        <AllTourCarousel noOfCards={2} topTour={topTour} tourName="Walking"/>
+        <AllTourCarousel noOfCards={2} topTour={topTour} tourName="Food"/>
       </div>
       <div className="Section3">
         <AllTourCarousel noOfCards={3} popularDestination={popularDestination}/>
@@ -250,4 +253,4 @@ const WalkingTour = () => (
   </div>
 );
 
-export default WalkingTour;
+export default FoodTour;

@@ -14,7 +14,7 @@ const WalkingTourWorldWide = () => (
         paddingBottom:'10px'
       }}
     >
-      All Walking Tours worldwide
+      All Bike Tours worldwide
     </h1>
     <div
       style={{

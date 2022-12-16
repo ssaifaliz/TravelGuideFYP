@@ -1,14 +1,14 @@
 import React from "react";
 import "./tour-details.scss";
 
-const TourDetails = () => (
+const TourDetails = (props) => (
   <div className="container tourDetails">
+    <div className="heading">
+      <h1>{props.heading}</h1>
+    </div>
     <div className="row">
       <div className="col-md-6">
         <div className="Header">
-          <h1 data-translatekey="SEOPageContent.general.h1Title.ExperienceType_TransportMode">
-            All Walking Tours worldwide
-          </h1>
           <p data-translatekey="SEAPageContent.general.subtitle.Tours_Walkingtour">
             Discover the city at your own pace on a walking tour in your next
             destination. Walk your way through the city's districts and main
@@ -27,7 +27,7 @@ const TourDetails = () => (
         <div className="ImageContainer">
           <img
             alt="All Walking Tours worldwide"
-            src="https://withlocals-com-res.cloudinary.com/image/upload/w_600,h_336,c_fill,g_auto,q_auto,dpr_1.0,f_auto/eae5205fafdf2de363532b63db3af810"
+            src={props.img}
             data-translatekey="SEAPageContent.general.headerImage.Tours_Walkingtour"
             width="600"
             height="336"
