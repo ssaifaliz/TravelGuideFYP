@@ -2,13 +2,34 @@
   .modal-content {
     width: 80%;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 20px;
+    z-index: 1111;
   }
 }
 
 .LoginPage {
   background: #f6f2e4;
-  border-radius: 30px;
+  border-radius: 20px;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: unset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: unset;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #70ab43;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
   .Heading {
     color: #70ab43;
@@ -18,7 +39,7 @@
     text-align: center;
   }
   .label {
-    margin: 10px 0 5px 21%;
+    margin: 10px 0 5px 11%;
     font-size: 15px;
     font-weight: 700;
     @media only screen and (max-width: 900px) {
@@ -26,9 +47,9 @@
     }
   }
   .search-icon {
-    width: 60%;
+    width: 80%;
     position: relative;
-    margin: 0px 0 0 20%;
+    margin: 0px 0 0 10%;
     @media only screen and (max-width: 900px) {
       width: 80%;
       margin: 0px 0 0 10%;
@@ -49,6 +70,22 @@
       padding-left: 45px;
       border: 1px solid #70ab43;
       width: 100%;
+      outline: none;
+    }
+    select {
+      outline: none;
+      background-color: white;
+      border-radius: 25px;
+      padding: 10px 25px;
+      padding-left: 45px;
+      border: 1px solid #70ab43;
+      width: 100%;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 25px;
+      cursor: pointer;
     }
   }
   .loginBtn {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Footer, Contactus, FindTours } from "../../components";
+import { Navbar, Footer, Contactus, FindTours } from "../../container";
 import "./find-tour.scss";
 
 const FindTour = () => (

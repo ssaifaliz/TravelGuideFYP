@@ -5,18 +5,24 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillCartFill, BsFillPersonFill } from "react-icons/bs";
-import Login from "../login_signup/login";
+import Login from "../../components/login_signup/login";
 import { Link } from "react-router-dom";
-
 
 const Navbar = () => {
   const [modalShow, setModalShow] = React.useState(false);
+  const [modalName, setModalName] = React.useState("login");
+  const modalValueChange = (e) => {
+    setModalName(e)
+    setModalShow(true)
+  };
   return (
     <div className="navSection">
       <div className="container">
         <div className="mainNav">
           <div className="logo">
-          <Link to="/"><img src={logo} alt="" /></Link>
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
           </div>
           <div className="details">
             <div className="currency">
@@ -30,8 +36,27 @@ const Navbar = () => {
               <BsFillCartFill />
             </div>
 
-            <div className="loginSignup" onClick={() => setModalShow(true)}>
-              <BsFillPersonFill /> Log In
+            <div className="loginSignup">
+              <Dropdown>
+                <Dropdown.Toggle id="dropdown-basic">
+                  <BsFillPersonFill />
+                  <span>Log In</span>
+                </Dropdown.Toggle>
+                {/* onClick={() => setModalShow(true)} */}
+                <Dropdown.Menu>
+                  <Dropdown.Item>
+                    <span onClick={()=> modalValueChange("traveler")}>
+                      Traveler Login
+                    </span>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <span onClick={()=> modalValueChange("agent")}>Agent Login</span>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <span onClick={()=> modalValueChange("guide")}>Guide Login</span>
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
             <div className="burgerIcon">
               <Dropdown>
@@ -49,7 +74,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Login show={modalShow} onHide={() => setModalShow(false)} />
+      <Login show={modalShow} onHide={() => setModalShow(false)} modalname = {modalName} />
     </div>
   );
 };

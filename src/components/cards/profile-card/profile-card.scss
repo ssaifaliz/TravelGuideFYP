@@ -1,0 +1,38 @@
+.ProfileCard {
+  .CardDetails {
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .cardHeading {
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 0px;
+      }
+      h1 {
+        font-size: 40px;
+        font-family: Graphik, Helvetica, Arial Black, Arial, Sans-Serif !important;
+        font-weight: 800;
+       
+      }
+    }
+    .cardTxt {
+      p {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .ExploreButton {
+        border: 1px solid #fff;
+        border-radius: 1.5rem;
+        padding: 5px 20px 10px;
+        line-height: 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+}
