@@ -10,7 +10,7 @@ const ProfileLargeCard = (props) => {
   // "/experience/jewish-berlin-unique-walking-tour-e8614954/?adults=4&amp;children=0&amp;backUrl=%2Fexperiences%2Ftours%2Fwalking%2F"
   // <img alt="Jewish Berlin: Unique Walking Tour in Berlin - 818c031f15dae0b81b5458b8b120e86e" src="https://withlocals-com-res.cloudinary.com/image/upload/w_830,h_467,c_fill,g_auto,q_auto,dpr_1.0,f_auto/818c031f15dae0b81b5458b8b120e86e" width="830" height="830" class="Child-2wejq Image-2LnKr">
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "100%" }}>
       <Card.Img
         variant="top"
         src="https://withlocals-com-res.cloudinary.com/image/upload/w_830,h_467,c_fill,g_auto,q_auto,dpr_1.0,f_auto/818c031f15dae0b81b5458b8b120e86e"
@@ -28,7 +28,7 @@ const ProfileLargeCard = (props) => {
             display: "inline-block",
             position: "relative",
             zIndex: 1,
-            marginTop: '-35%'
+            marginTop: '-20%'
           }}
         />
         <Card.Text

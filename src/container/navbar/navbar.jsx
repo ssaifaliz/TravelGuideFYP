@@ -68,6 +68,15 @@ const Navbar = () => {
                   <Dropdown.Item>
                     <Link to="/find-tour">Find A Tour</Link>
                   </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/walking-tour">Walking Tour</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/bike-tour">Bike Tour</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/food-tour">Food Tour</Link>
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
