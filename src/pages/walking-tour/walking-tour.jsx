@@ -11,8 +11,8 @@ import "./walking-tour.scss";
 import { ProfileCard } from "../../components/cards";
 import WalkingTourWorldWide from "./components/walkingTourWorldWide";
 import ReviewSection from "./components/reviewSection";
-=======
->>>>>>> 02dbbed4b35018b1f4505a54c389067f916fa7d8
+import foodBanner from "../../assets/food tour/walking-banner.webp"
+
 
 const responsive = {
   superLargeDesktop: {
