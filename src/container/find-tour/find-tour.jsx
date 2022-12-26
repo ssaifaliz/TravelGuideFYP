@@ -6,7 +6,7 @@ import worldMap from "../../assets/worldmap.gif";
 const FindTours = () => (
   <div className="FindTour">
     <div className="container">
-      <div class="page-title">
+      <div className="page-title">
         <h1>Find A Tour</h1>
       </div>
       <div className="row">
@@ -97,12 +97,12 @@ const FindTours = () => (
           </div>
         </div>
         <div className="col-md-8">
-          <div class="search-map">
+          <div className="search-map">
             <div className="search-column">
               <h4>Where are you going?</h4>
-              <div class="inputSearch">
+              <div className="inputSearch">
                 <input placeholder="Type City, Country or Tour...." />
-                <div class="goBtn">
+                <div className="goBtn">
                   <button>GO</button>
                 </div>
               </div>

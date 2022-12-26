@@ -4,7 +4,7 @@ import "./info.scss";
 const Info = () => (
   <div className="container">
     <div className="mainInfoSection">
-      <div class="number-counter">
+      <div className="number-counter">
         <span>1</span>
         <span>8</span>
         <span>5</span>

@@ -27,15 +27,15 @@ const Login = (props) => {
           <div className="LoginPage">
             <div className="Heading">Login</div>
             <div className="label">Email</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaEnvelope />
               </div>
               <input placeholder="e.g., youremail@email.com" />
             </div>
             <div className="label">Password</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaLock />
               </div>
               <input type="text" placeholder="Enter Password" />
@@ -51,15 +51,15 @@ const Login = (props) => {
           <div className="LoginPage">
             <div className="Heading">Sign Up</div>
             <div className="label">Full Name</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaUserAlt />
               </div>
               <input type="text" placeholder="Enter Your Full Name" />
             </div>
             <div className="label">Country</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaGlobeAfrica />
               </div>
               <select name="cars">
@@ -70,15 +70,15 @@ const Login = (props) => {
               </select>
             </div>
             <div className="label">Email</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaEnvelope />
               </div>
               <input placeholder="e.g., youremail@email.com" />
             </div>
             <div className="label">Password</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaLock />
               </div>
               <input type="text" placeholder="Enter Password" />
@@ -108,15 +108,15 @@ const Login = (props) => {
           <div className="LoginPage">
             <div className="Heading">Agency Login</div>
             <div className="label">Email</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaEnvelope />
               </div>
               <input placeholder="e.g., youremail@email.com" />
             </div>
             <div className="label">Password</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaLock />
               </div>
               <input type="text" placeholder="Enter Password" />
@@ -132,15 +132,15 @@ const Login = (props) => {
           <div className="LoginPage">
             <div className="Heading">Agency Information</div>
             <div className="label">Company Name</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaUserAlt />
               </div>
               <input type="text" placeholder="Enter Your Full Name" />
             </div>
             <div className="label">Country</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaGlobeAfrica />
               </div>
               <select name="cars">
@@ -151,36 +151,36 @@ const Login = (props) => {
               </select>
             </div>
             <div className="label">State/Province</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaGlobeAfrica />
               </div>
               <input placeholder="Enter your State/Province" />
             </div>
             <div className="label">City</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaCity />
               </div>
               <input placeholder="Enter your City" />
             </div>
             <div className="label">Address</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaRegAddressBook />
               </div>
               <input placeholder="Enter your Address" />
             </div>
             <div className="label">Email</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaEnvelope />
               </div>
               <input placeholder="e.g., youremail@email.com" />
             </div>
             <div className="label">Password</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaLock />
               </div>
               <input type="text" placeholder="Enter Password" />
@@ -210,15 +210,15 @@ const Login = (props) => {
           <div className="LoginPage">
             <div className="Heading">Guide Login</div>
             <div className="label">Email</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaEnvelope />
               </div>
               <input placeholder="e.g., youremail@email.com" />
             </div>
             <div className="label">Password</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaLock />
               </div>
               <input type="text" placeholder="Enter Password" />
@@ -234,15 +234,15 @@ const Login = (props) => {
           <div className="LoginPage">
             <div className="Heading">Guide Information</div>
             <div className="label">Full Name</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaUserAlt />
               </div>
               <input type="text" placeholder="Enter Your Full Name" />
             </div>
             <div className="label">Country</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaGlobeAfrica />
               </div>
               <select name="cars">
@@ -253,51 +253,51 @@ const Login = (props) => {
               </select>
             </div>
             <div className="label">State/Province</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaGlobeAfrica />
               </div>
               <input placeholder="Enter your State/Province" />
             </div>
             <div className="label">City</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaCity />
               </div>
               <input placeholder="Enter your City" />
             </div>
             <div className="label">Address</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaRegAddressBook />
               </div>
               <input placeholder="Enter your Address" />
             </div>
             <div className="label">Year Of Experience</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaMedal />
               </div>
               <input placeholder="Enter your Experience" />
             </div>
             <div className="label">Phone</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaPhoneAlt />
               </div>
               <input placeholder="Enter your Phone Number" />
             </div>
 
             <div className="label">Email</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaEnvelope />
               </div>
               <input placeholder="e.g., youremail@email.com" />
             </div>
             <div className="label">Password</div>
-            <div class="search-icon">
-              <div class="icon">
+            <div className="search-icon">
+              <div className="icon">
                 <FaLock />
               </div>
               <input type="text" placeholder="Enter Password" />

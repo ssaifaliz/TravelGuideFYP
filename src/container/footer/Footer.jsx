@@ -45,7 +45,7 @@ const Footer = () => (
     </div>
     <div className="copyRights">
       <div className="container">
-        <div class="text-center">
+        <div className="text-center">
           <p>© THE EXPLORER, 2022. All Rights Reserved.</p>
         </div>
       </div>

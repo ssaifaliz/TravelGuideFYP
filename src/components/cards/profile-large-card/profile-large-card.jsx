@@ -8,7 +8,7 @@ import { FaStar } from "react-icons/fa";
 const ProfileLargeCard = (props) => {
   console.log(props.imgLink);
   // "/experience/jewish-berlin-unique-walking-tour-e8614954/?adults=4&amp;children=0&amp;backUrl=%2Fexperiences%2Ftours%2Fwalking%2F"
-  // <img alt="Jewish Berlin: Unique Walking Tour in Berlin - 818c031f15dae0b81b5458b8b120e86e" src="https://withlocals-com-res.cloudinary.com/image/upload/w_830,h_467,c_fill,g_auto,q_auto,dpr_1.0,f_auto/818c031f15dae0b81b5458b8b120e86e" width="830" height="830" class="Child-2wejq Image-2LnKr">
+  // <img alt="Jewish Berlin: Unique Walking Tour in Berlin - 818c031f15dae0b81b5458b8b120e86e" src="https://withlocals-com-res.cloudinary.com/image/upload/w_830,h_467,c_fill,g_auto,q_auto,dpr_1.0,f_auto/818c031f15dae0b81b5458b8b120e86e" width="830" height="830" className="Child-2wejq Image-2LnKr">
   return (
     <Card style={{ width: "100%" }}>
       <Card.Img

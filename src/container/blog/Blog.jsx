@@ -24,7 +24,7 @@ const Blog = () => (
           </div>
           <div className="blogCardInfo">
             <h3>Pakistan's Best Places for Fall Foliage</h3>
-            <p class="post-date">Dec 14, 2022</p>
+            <p className="post-date">Dec 14, 2022</p>
             <a className="read-more">Read More</a>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Blog = () => (
           </div>
           <div className="blogCardInfo">
             <h3>Pakistan's Best Places for Fall Foliage</h3>
-            <p class="post-date">Dec 14, 2022</p>
+            <p className="post-date">Dec 14, 2022</p>
             <a className="read-more">Read More</a>
           </div>
         </div>
@@ -44,12 +44,12 @@ const Blog = () => (
           </div>
           <div className="blogCardInfo">
             <h3>Pakistan's Best Places for Fall Foliage</h3>
-            <p class="post-date">Dec 14, 2022</p>
+            <p className="post-date">Dec 14, 2022</p>
             <a className="read-more">Read More</a>
           </div>
         </div>
       </div>
-      <div class="blogBtn">
+      <div className="blogBtn">
         <button>View All Blog Posts</button>
       </div>
     </div>
