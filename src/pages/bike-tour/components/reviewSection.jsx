@@ -108,7 +108,7 @@ const ReviewSection = () => (
         margin: " 30px auto",
         textAlign: "center",
         borderBottom: "2px solid #f7943c",
-        paddingBottom:'10px'
+        paddingBottom: "10px",
       }}
     >
       What other travelers love about our local experts

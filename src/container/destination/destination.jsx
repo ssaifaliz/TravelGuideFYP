@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./destination.scss";
 
 const designations = [
-  { city: "Paris", country: "France" },
-  { city: "London", country: "England" },
-  { city: "Tokyo", country: "Japan" },
-  { city: "Rome", country: "Italy" },
+  { city: "Skardu" },
+  { city: "Malam Jabba" },
+  { city: "Sawat" },
+  { city: "Islamabad" },
 ];
 
 const destination = () => {
@@ -30,7 +30,7 @@ const destination = () => {
               onClick={() => {}}
             >
               <Link to="/detailPage">
-                <div className="txtCountryCity">{`${each?.city}, ${each?.country}`}</div>
+                <div className="txtCountryCity">{each?.city}</div>
               </Link>
             </div>
           ))}

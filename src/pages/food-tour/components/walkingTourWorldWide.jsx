@@ -11,7 +11,7 @@ const WalkingTourWorldWide = () => (
         margin: " 30px auto",
         textAlign: "center",
         borderBottom: "2px solid #f7943c",
-        paddingBottom:'10px'
+        paddingBottom:'10px',
       }}
     >
       All Food Tours worldwide
