@@ -1,9 +1,9 @@
 import style from "../detailPage.module.scss";
-const Tours = () => (
+const Tours = ({detail}) => (
   <div style={{ height: "600px" }}>
     <div id="City" className="">
       <div className={`text-center ${style["page-title-landing"]}`}>
-        <h2>London City Tours</h2>
+        <h2>{detail?.name} City Tours</h2>
       </div>
 
       <ul className={`block-grid-3 ${style["unOrdered"]}`}>
@@ -34,7 +34,7 @@ const Tours = () => (
                 <div className={style["card-box"]} align="left">
                   <h3>
                     <a href="https://www.toursbylocals.com/London-revisited-private-tour">
-                      London Re-visited
+                    {detail?.name} Re-visited
                     </a>
                   </h3>
                   <div className={style["separator"]} />
@@ -73,7 +73,7 @@ const Tours = () => (
         }}
         href="https://www.toursbylocals.com/find_tour&amp;area=21&amp;category=2"
       >
-        <b>MORE</b> London City Tours...
+        <b>MORE</b> {detail?.name} City Tours...
       </a>
       <div className="clearRight"></div>
     </div>

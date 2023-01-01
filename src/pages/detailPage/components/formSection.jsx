@@ -1,11 +1,11 @@
 import style from "../detailPage.module.scss";
-const FormSection = () => (
+const FormSection = ({detail}) => (
   <div className={style["lp-search-panel"]}>
     <div className="columns-12 search-column-lp">
-      <h3>Find your perfect London tour</h3>
+      <h3>Find your perfect {detail?.name} tour</h3>
       <br />
       <p className="fontWeightNormal">
-        Local Guides offer 423 unique and customizable tours in London. When are
+        Local Guides offer 423 unique and customizable tours in {detail?.name}. When are
         you visiting?
       </p>
       <form

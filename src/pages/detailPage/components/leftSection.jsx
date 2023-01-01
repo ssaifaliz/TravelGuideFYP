@@ -1,9 +1,9 @@
 import style from "../detailPage.module.scss";
-const LeftSection = () => (
+const LeftSection = ({detail}) => (
   <div className={style["leftSection"]}>
     <div className="closingAsideStyle" align="center">
       <div className="page-title-landing">
-        <h3 className="ul-title">Local Guides In London</h3>
+        <h3 className="ul-title">Local Guides In {detail?.name}</h3>
         <div className="guide-count">
           <p>
             <i>There are 52 local Guides</i>
@@ -99,28 +99,28 @@ const LeftSection = () => (
     </div>
     <br />
     <div className="d-flex align-items-center justify-content-center w-100">
-      <h2 className={style["ul-title"]}>London Private Tours</h2>
+      <h2 className={style["ul-title"]}>{detail?.name} Private Tours</h2>
     </div>
     <p className={style['bigTxt']}>
       Cockney accents, afternoon tea, Tower Bridge and Big Ben. Westminster
       Abbey? Check. Buckingham Palace? Check. But hang on a second - have you
-      actually seen the REAL London? Take a London tour with a local guide and
+      actually seen the REAL {detail?.name}? Take a {detail?.name} tour with a local guide and
       get up close and personal with this dazzling city.
       <br />
       <br />
-      London truly has something for everyone, whether you're a culture hound, a
+      {detail?.name} truly has something for everyone, whether you're a culture hound, a
       history buff, a diehard shopper or urban adventurer. Let our local guides
       take you for morning tea at Columbia Road Flower Market, then shop for
       unique fashion pieces in Spital fields, where the narrow cobbled alleys of
-      East London effortlessly evoke Victorian times. Walk through the fabled
+      East {detail?.name} effortlessly evoke Victorian times. Walk through the fabled
       Inns of Court to the banks of the Thames, where your guide will take you
       for a pint with the after-work crowd. Each day is a new adventure in
-      London.
+      {detail?.name}.
       <br />
       <br />
-      You can choose from the London tours offered by ToursByLocals, but feel
+      You can choose from the {detail?.name} tours offered by ToursByLocals, but feel
       free to suggest alternative places and activities that strike your
-      interest. Your guide wants you to have the ultimate London experience.
+      interest. Your guide wants you to have the ultimate {detail?.name} experience.
     </p>
   </div>
 );

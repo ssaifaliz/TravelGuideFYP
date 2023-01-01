@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./destination.scss";
 
 const designations = [
-  { city: "Skardu" },
-  { city: "Malam Jabba" },
-  { city: "Sawat" },
-  { city: "Islamabad" },
+  {id:1, city: "Skardu" },
+  {id:2, city: "Malam Jabba" },
+  {id:3, city: "Sawat" },
+  {id:4, city: "Islamabad" },
 ];
 
 const destination = () => {
@@ -29,7 +29,7 @@ const destination = () => {
               className={`col-md-3 destinationImage${(index += 1)}`}
               onClick={() => {}}
             >
-              <Link to="/detailPage">
+              <Link to={{pathname:`/detailPage/${each.id}`}}>
                 <div className="txtCountryCity">{each?.city}</div>
               </Link>
             </div>
