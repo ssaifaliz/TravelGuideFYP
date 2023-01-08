@@ -38,14 +38,14 @@ const Navbar = () => {
             </button>
             <div id="navbarNav" className="navbar-collapse collapse">
               <ul className="nav navbar-nav ml-auto" style={{ marginLeft: 'auto' }}>
-                <li className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Login</a></li>
-                <li className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Signup</a></li>
+                <li onClick={() => modalValueChange("traveler")} className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Travel Login</a></li>
+                <li onClick={() => modalValueChange("agent")} className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Agent Login</a></li>
+                <li onClick={() => modalValueChange("guide")} className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Guide Login</a></li>
                 <li className="burgerIcon">
                   <Dropdown>
                     <Dropdown.Toggle id="dropdown-basic">
                       <AiOutlineMenu />
                     </Dropdown.Toggle>
-
                     <Dropdown.Menu>
                       <Dropdown.Item>
                         <Link to="/find-tour">Find A Tour</Link>
@@ -67,6 +67,7 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
+      <Login show={modalShow} onHide={() => setModalShow(false)} modalname={modalName} />
     </div>
     // <div className="navSection">
     //   <div className="container">
