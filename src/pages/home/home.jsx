@@ -5,6 +5,7 @@ import {
   Info,
   Testimonials,
   Destination,
+  Explore,
   Blog,
   Contactus,
   Footer,
@@ -18,6 +19,7 @@ const Home = () => (
     <Info />
     <Testimonials />
     <Destination />
+    <Explore />
     <Blog />
     <Contactus />
     <Footer />

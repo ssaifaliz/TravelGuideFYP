@@ -38,7 +38,7 @@ const Footer = () => (
 
             <p>TERMS AND CONDITIONS</p>
             <p>PRIVACY POLICY</p>
-            <img src={creditcards} alt="" />
+            {/* <img src={creditcards} alt="" /> */}
           </div>
         </div>
       </div>
