@@ -39,9 +39,9 @@ const Navbar = () => {
               </button>
               <div id="navbarNav" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav ml-auto" style={{ marginLeft: 'auto' }}>
-                  <li onClick={() => modalValueChange("traveler")} className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Travel Login</a></li>
-                  <li onClick={() => modalValueChange("agent")} className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Agent Login</a></li>
-                  <li onClick={() => modalValueChange("guide")} className="nav-item"><a data-toggle="modal" className="nav-link custom_nav_link">Guide Login</a></li>
+                  <li onClick={() => modalValueChange("traveler")} className="nav-item"><a style={{ cursor: 'pointer' }} data-toggle="modal" className="nav-link custom_nav_link">Travel Login</a></li>
+                  <li onClick={() => modalValueChange("agent")} className="nav-item"><a style={{ cursor: 'pointer' }} data-toggle="modal" className="nav-link custom_nav_link">Agent Login</a></li>
+                  <li onClick={() => modalValueChange("guide")} className="nav-item"><a style={{ cursor: 'pointer' }} data-toggle="modal" className="nav-link custom_nav_link">Guide Login</a></li>
                   <li className="burgerIcon">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
