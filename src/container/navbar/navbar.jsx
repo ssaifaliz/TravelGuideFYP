@@ -70,7 +70,7 @@ const Navbar = () => {
         </header>
         <Login show={modalShow} onHide={() => setModalShow(false)} modalname={modalName} />
       </div>
-      <div className="navSection">
+      {/* <div className="navSection">
         <div className="container">
           <div className="mainNav">
             <div className="logo">
@@ -96,7 +96,7 @@ const Navbar = () => {
                     <BsFillPersonFill />
                     <span>Log In</span>
                   </Dropdown.Toggle>
-                  {/* onClick={() => setModalShow(true)} */}
+                  onClick={() => setModalShow(true)}
                   <Dropdown.Menu>
                     <Dropdown.Item>
                       <span onClick={() => modalValueChange("traveler")}>
@@ -138,7 +138,7 @@ const Navbar = () => {
           </div>
         </div>
         <Login show={modalShow} onHide={() => setModalShow(false)} modalname={modalName} />
-      </div>
+      </div> */}
     </>
   );
 };

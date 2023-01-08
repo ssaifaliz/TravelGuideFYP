@@ -1,110 +1,133 @@
-.navSection {
-  background-color: #f6f6f6;
-  position: sticky;
-  top: 0;
-  z-index: 99999;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  .mainNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+// .navSection {
+//   background-color: #f6f6f6;
+//   position: sticky;
+//   top: 0;
+//   z-index: 99999;
+//   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+//   .mainNav {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
 
-    .logo {
-      width: 40%;
-      @media only screen and (max-width: 900px) {
-        width: 30%;
+//     .logo {
+//       width: 40%;
+//       @media only screen and (max-width: 900px) {
+//         width: 30%;
+//       }
+//       img {
+//         width: 160px;
+//         height: 100px;
+//         @media only screen and (max-width: 900px) {
+//           width: 100px;
+//           height: 70px;
+//         }
+//       }
+//     }
+//     .details {
+//       width: 60%;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       @media only screen and (max-width: 900px) {
+//         width: 70%;
+//       }
+//       .currency {
+//         .form-select {
+//           outline: none;
+//           border: none;
+//           font-size: 20px;
+//           font-weight: 700;
+//           width: 120px;
+//           background-size: 20px 20px;
+//           background-color: #f6f6f6;
+//           cursor: pointer;
+//           @media only screen and (max-width: 900px) {
+//             font-size: 17px;
+//             width: 100px;
+//             background-size: 15px 15px;
+//           }
+//         }
+//       }
+//       .cart {
+//         cursor: pointer;
+//         svg {
+//           width: 34px;
+//           height: 35px;
+//           @media only screen and (max-width: 900px) {
+//             width: 24px;
+//             height: 25px;
+//           }
+//         }
+//       }
+//       .loginSignup {
+//         font-size: 20px;
+//         font-weight: 700;
+//         button {
+//           border: none;
+//           background: none;
+//           outline: none;
+//           color: black;
+//         }
+//         span{
+//          font-size: 20px;
+//          font-weight: 700;
+//          @media only screen and (max-width: 900px) {
+//           font-size: 15px;
+//         }
+//         }
+//         @media only screen and (max-width: 900px) {
+//           font-size: 15px;
+//         }
+//         cursor: pointer;
+//         svg {
+//           width: 34px;
+//           height: 35px;
+//           @media only screen and (max-width: 900px) {
+//             width: 24px;
+//             height: 25px;
+//           }
+//         }
+//       }
+//       .burgerIcon {
+//         .dropdown-toggle::after {
+//           display: none;
+//         }
+//         button {
+//           border: none;
+//           background: none;
+//           outline: none;
+//           color: black;
+//         }
+//         svg {
+//           width: 34px;
+//           height: 35px;
+//           @media only screen and (max-width: 900px) {
+//             width: 24px;
+//             height: 25px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+.navbar {
+  .container {
+    .burgerIcon {
+      .dropdown-toggle::after {
+        display: none;
       }
-      img {
-        width: 160px;
-        height: 100px;
+      button {
+        border: none;
+        background: none;
+        outline: none;
+        color: black;
+      }
+      svg {
+        width: 34px;
+        height: 35px;
         @media only screen and (max-width: 900px) {
-          width: 100px;
-          height: 70px;
-        }
-      }
-    }
-    .details {
-      width: 60%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      @media only screen and (max-width: 900px) {
-        width: 70%;
-      }
-      .currency {
-        .form-select {
-          outline: none;
-          border: none;
-          font-size: 20px;
-          font-weight: 700;
-          width: 120px;
-          background-size: 20px 20px;
-          background-color: #f6f6f6;
-          cursor: pointer;
-          @media only screen and (max-width: 900px) {
-            font-size: 17px;
-            width: 100px;
-            background-size: 15px 15px;
-          }
-        }
-      }
-      .cart {
-        cursor: pointer;
-        svg {
-          width: 34px;
-          height: 35px;
-          @media only screen and (max-width: 900px) {
-            width: 24px;
-            height: 25px;
-          }
-        }
-      }
-      .loginSignup {
-        font-size: 20px;
-        font-weight: 700;
-        button {
-          border: none;
-          background: none;
-          outline: none;
-          color: black;
-        }
-        span{
-         font-size: 20px;
-         font-weight: 700;
-         @media only screen and (max-width: 900px) {
-          font-size: 15px;
-        }
-        }
-        @media only screen and (max-width: 900px) {
-          font-size: 15px;
-        }
-        cursor: pointer;
-        svg {
-          width: 34px;
-          height: 35px;
-          @media only screen and (max-width: 900px) {
-            width: 24px;
-            height: 25px;
-          }
-        }
-      }
-      .burgerIcon {
-        .dropdown-toggle::after {
-          display: none;
-        }
-        button {
-          border: none;
-          background: none;
-          outline: none;
-          color: black;
-        }
-        svg {
-          width: 34px;
-          height: 35px;
-          @media only screen and (max-width: 900px) {
-            width: 24px;
-            height: 25px;
-          }
+          width: 24px;
+          height: 25px;
         }
       }
     }
