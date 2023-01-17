@@ -11,7 +11,7 @@ import "./bike-tour.scss";
 import { ProfileCard } from "../../components/cards";
 import WalkingTourWorldWide from "./components/walkingTourWorldWide";
 import ReviewSection from "./components/reviewSection";
-import foodBanner from "../../assets/food tour/bike-banner.webp"
+import foodBanner from "../../assets/food_tour/bike-banner.webp"
 
 
 const responsive = {
