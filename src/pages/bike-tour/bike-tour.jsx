@@ -2,252 +2,311 @@ import React from "react";
 import {
   Navbar,
   Footer,
-  Contactus,
-  TourDetails,
-  AllTourCarousel,
+  Contactus
 } from "../../container";
-import Carousel from "react-multi-carousel";
 import "./bike-tour.scss";
-import { ProfileCard } from "../../components/cards";
-import WalkingTourWorldWide from "./components/walkingTourWorldWide";
-import ReviewSection from "./components/reviewSection";
-import foodBanner from "../../assets/food_tour/bike-banner.webp"
+import ellipseImage from "../../assets/food_tour/ellipse1.png";
+import Form from "react-bootstrap/Form";
+import cardImage1 from "../../assets/food_tour/image1.png";
+import cardImage2 from "../../assets/food_tour/image2.png";
+import cardImage3 from "../../assets/food_tour/image3.png";
+import cardImage4 from "../../assets/food_tour/image4.png";
+import cardImage5 from "../../assets/food_tour/image5.png";
+import { FaRegClock, FaCheck } from "react-icons/fa";
+import Accordion from "react-bootstrap/Accordion";
 
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
-const LocalsChoice = [
+const widget = [
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_344,c_fill,g_auto,q_auto,dpr_1.0,f_auto/e0aa62e2837c060f8d14f02022c6678f",
-    heading: "Anna",
+    img: ellipseImage,
+    text: "Street Food Tours",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_344,c_fill,g_auto,q_auto,dpr_1.0,f_auto/fdb93352a030f220eb9b002118cc0bc1",
-    heading: "Fusina",
+    img: ellipseImage,
+    text: "Food Tours",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_344,c_fill,g_auto,q_auto,dpr_1.0,f_auto/ca4074a0fc435902e421d12fb6f8fbf5",
-    heading: "Ian",
+    img: ellipseImage,
+    text: "Private Sightseeing Tours",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_344,c_fill,g_auto,q_auto,dpr_1.0,f_auto/65d79d49eb63b3490fe82eedcd85146a",
-    heading: "Annet",
+    img: ellipseImage,
+    text: "Food & Drink",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_344,c_fill,g_auto,q_auto,dpr_1.0,f_auto/51f3653be43a1898d6712d6573026202",
-    heading: "Otto",
+    img: ellipseImage,
+    text: "Tours, Sightseeing & Cruises",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
-    heading: "Christa",
+    img: ellipseImage,
+    text: "Food Tours",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_344,c_fill,g_auto,q_auto,dpr_1.0,f_auto/fdb93352a030f220eb9b002118cc0bc1",
-    heading: "Fusina",
+    img: ellipseImage,
+    text: "Private Sightseeing Tours",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_344,c_fill,g_auto,q_auto,dpr_1.0,f_auto/e0aa62e2837c060f8d14f02022c6678f",
-    heading: "Anna",
+    img: ellipseImage,
+    text: "Food & Drink",
+  },
+  {
+    img: ellipseImage,
+    text: "Tours, Sightseeing & Cruises",
   },
 ];
-const allTourCards = [
+const cards = [
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
-    heading: "Newbies",
+    image: cardImage1,
+    title: "Street Food Tour of Lahore's Walled City",
+    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
+    time: "3 to 4 hours",
+    price: "80.00",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
-    heading: "Families",
+    image: cardImage2,
+    title: "Jalebi Khaana Peena Tour",
+    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
+    time: "3 to 30 minutes",
+    price: "20.52",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Foodies-optimized",
-    heading: "foodies",
+    image: cardImage3,
+    title: "Street Food Tour of Lahore's Walled City",
+    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
+    time: "4 to 5 hours",
+    price: "150.00",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Foodies-optimized",
-    heading: "foodies",
+    image: cardImage4,
+    title: "Street Food Tour of Lahore's Walled City",
+    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
+    time: "3 to 4 hours",
+    price: "100.00",
   },
   {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
-    heading: "Families",
-  },
-  {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Night_owls-optimized",
-    heading: "Night Owls",
-  },
-  {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/History_Buffs-optimized",
-    heading: "History Buffs",
-  },
- 
-  {
-    id: 1,
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_216,h_352,c_fill,g_auto,q_auto,dpr_1.0,f_auto/website/passions/slider/Newbies-optimized",
-    heading: "Newbies",
+    image: cardImage5,
+    title: "Street Food Tour of Lahore's Walled City",
+    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
+    time: "6 hours",
+    price: "90.00",
   },
 ];
-const popularDestination = [
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/thailand/Chang_Mai",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/italy/Florence",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/spain/Barcelona",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/portugal/Lisbon",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/3cd4a790944dbfb2fb9970a79a61be72",
-    heading: "foodies",
-  },
- 
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_376,h_280,c_fill,g_auto,q_auto,dpr_1.0,f_auto/destinations/spain/Javea/Javea9",
-    heading: "foodies",
-  },
-];
-const topTour = [
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/2966ef4d20b2a9bfafd3fda3a35cbdde",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/f5213c4f0f00fd3510ea7881bffdf7da",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/cbd123c5b59d595c251c55dec26db0f8",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/cbd123c5b59d595c251c55dec26db0f8",
-    heading: "foodies",
-  },
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/260debd1b7f887703f4d7779f7668437",
-    heading: "foodies",
-  },
-  
-  {
-    imgLink:
-      "https://withlocals-com-res.cloudinary.com/image/upload/w_533,h_300,c_fill,g_auto,q_auto,dpr_1.0,f_auto/f5213c4f0f00fd3510ea7881bffdf7da",
-    heading: "foodies",
-  },
-];
-
 const BikeTour = () => (
   <div>
     <Navbar />
     <div className="bikeTour">
-      <div className="Section1">
-        <TourDetails  heading='All Bike Tours worldwide' img={foodBanner}/>
-      </div>
-      <div className="Section2">
-        <AllTourCarousel noOfCards={2} topTour={topTour} tourName="Bike"/>
-      </div>
-      <div className="Section3">
-        <AllTourCarousel noOfCards={3} popularDestination={popularDestination}/>
-      </div>
-      <div className="Section4">
-        <AllTourCarousel noOfCards={5} allTourCards={allTourCards}/>
-      </div>
-      <div className="Section5">
-        <WalkingTourWorldWide />
-      </div>
+      <div className="mainBanner"></div>
 
-      <div className="section6">
-        <div className="container ExploreLocals">
-          <div className="Header">
-            <h1>Explore with a local of your choice</h1>
-            <p>
-              Learn about their personal stories, and find out how you can
-              explore together
-            </p>
+      <div className="Header">
+        <div className="heading">Top Pakistan Street Food Tour</div>
+        <div className="container widgetContainer">
+          {widget.map((item, index) => (
+            <div className="widget" key={index}>
+              <div>
+                <img src={item.img} alt="" />
+              </div>
+              <div className="txt">{item.text}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="container body">
+        <div className="row">
+          <div className="col-md-3 filters">
+            <div className="date">
+              <div className="title">When Are you travelling</div>
+              <div className="dateInput">
+                <input type="date" />
+              </div>
+            </div>
+            <div className="filterChecks">
+              <div className="title">Popular</div>
+              <div className="checkBoxes">
+                <Form>
+                  {[
+                    "Good for avoiding crowds",
+                    "Taking safety measures",
+                    "Virtual experiences",
+                    "Kid friendly",
+                  ].map((type) => (
+                    <div key={`default-${type}`} className="mb-3">
+                      <Form.Check
+                        type={type}
+                        id={`default-${type}`}
+                        label={`default ${type}`}
+                      />
+                    </div>
+                  ))}
+                </Form>
+              </div>
+            </div>
           </div>
-          <div className="carousel">
-            <Carousel responsive={responsive} infinite="true">
-              {LocalsChoice.map((each, index) => (
-                <div key={index} style={{ padding: "10px" }}>
-                  <ProfileCard
-                    imgLink={each.imgLink}
-                    heading={each.heading}
-                    seeMore={true}
-                  />
+          <div className="col-md-9 cardsSection">
+            <div className="tourCards">
+              {cards.map((item) => (
+                <div className="tourCardsContainer">
+                  <div className="Image">
+                    <img src={item.image} alt="" />
+                  </div>
+                  <div className="content">
+                    <div className="title">{item.title}</div>
+                    <div className="txt">{item.text}</div>
+                    <div className="time">
+                      <FaRegClock /> {item.time}
+                    </div>
+                    <div className="cancellation">
+                      <FaCheck /> Free Cancellation
+                    </div>
+                  </div>
+                  <div className="price">
+                    from <br />
+                    <div className="PriceMention">${item.price}</div>
+                    Price varies by group size
+                  </div>
                 </div>
               ))}
-            </Carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="faqsSection">
+        <div className="container">
+          <div className="faqs">
+            <div className="heading">Frequently Asked Questions</div>
+            <div className="subHeading">
+              The answers provided below are based on answers previously given
+              by the tour provider to customers’ questions.
+            </div>
+            <div className="accordionPanelFaqs">
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    <span>Q:</span> What are the best Street Food Tours in
+                    Pakistan?
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <div className="body_Ans">
+                      <span>A:</span> The best Street Food Tours in Pakistan
+                      according to Viator travelers are:
+                    </div>
+                    <ul>
+                      <li>Street Food Tour of Lahore's Walled City</li>
+                      <li>Jalebi Khaana Peena Tour</li>
+                      <li>Visit Mohatta Palace Zainab market & Burns road</li>
+                      <li>
+                        Half-Day Karachi Burns Road Private Victoria Ride with
+                        Dinner
+                      </li>
+                      <li>
+                        Ladies Special: Lahore Half day Guided Shopping Tour
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    <span>Q:</span> What Street Food Tours in Pakistan are
+                    taking additional safety precautions?
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <div className="body_Ans">
+                      <span>A:</span> The best Street Food Tours in Pakistan
+                      according to Viator travelers are:
+                    </div>
+                    <ul>
+                      <li>Street Food Tour of Lahore's Walled City</li>
+                      <li>Jalebi Khaana Peena Tour</li>
+                      <li>Visit Mohatta Palace Zainab market & Burns road</li>
+                      <li>
+                        Half-Day Karachi Burns Road Private Victoria Ride with
+                        Dinner
+                      </li>
+                      <li>
+                        Ladies Special: Lahore Half day Guided Shopping Tour
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>
+                    <span>Q:</span> What Street Food Tours in Pakistan are good
+                    for avoiding crowds?
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <div className="body_Ans">
+                      <span>A:</span> The best Street Food Tours in Pakistan
+                      according to Viator travelers are:
+                    </div>
+                    <ul>
+                      <li>Street Food Tour of Lahore's Walled City</li>
+                      <li>Jalebi Khaana Peena Tour</li>
+                      <li>Visit Mohatta Palace Zainab market & Burns road</li>
+                      <li>
+                        Half-Day Karachi Burns Road Private Victoria Ride with
+                        Dinner
+                      </li>
+                      <li>
+                        Ladies Special: Lahore Half day Guided Shopping Tour
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+        <div className="description">
+          <div className="container">
+            <div className="sectionsDescription">
+              <div className="heading">More Tours in Pakistan</div>
+              <div className="text">
+                The answers provided below are based on answers previously given
+                by the tour provider to customers’ questions.
+              </div>
+            </div>
+            <div className="sectionsDescription">
+              <div className="heading">Things to do near Pakistan</div>
+              <div className="text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks as necessary,
+                making this the first true generator on the Internet.
+              </div>
+            </div>
+            <div className="sectionsDescription">
+              <div className="heading">Trending attractions</div>
+              <div className="text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks as necessary,
+                making this the first true generator on the Internet.
+              </div>
+            </div>
+            <div className="sectionsDescription">
+              <div className="heading">Popular on Viator</div>
+              <div className="text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks as necessary,
+                making this the first true generator on the Internet.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    {/* <WalkingTourWorldWide /> */}
-    <ReviewSection />
+
     <Contactus />
     <Footer />
   </div>

@@ -7,6 +7,7 @@ import cardImage1 from "../../assets/food_tour/image1.png";
 import cardImage2 from "../../assets/food_tour/image2.png";
 import cardImage3 from "../../assets/food_tour/image3.png";
 import cardImage4 from "../../assets/food_tour/image4.png";
+import cardImage5 from "../../assets/food_tour/image5.png";
 import { FaRegClock, FaCheck } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
 
@@ -78,7 +79,7 @@ const cards = [
     price: "100.00",
   },
   {
-    image: cardImage2,
+    image: cardImage5,
     title: "Street Food Tour of Lahore's Walled City",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
     time: "6 hours",
@@ -93,7 +94,7 @@ const FoodTour = () => (
       <div className="mainBanner"></div>
 
       <div className="Header">
-        <div className="heading">Top Pakistan Street Food Tour</div>
+        <div className="heading">Top Pakistan Bike Tours</div>
         <div className="container widgetContainer">
           {widget.map((item, index) => (
             <div className="widget" key={index}>
