@@ -1,10 +1,10 @@
 
 .bikeTour {
   .mainBanner {
-    background-image: url("../../assets/food_tour/foodBanner.png");
-    background-size: contain;
+    background-image: url("../../assets/food_tour/bikeTourBanner.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 30rem;
+    height: 25rem;
   }
   .Header {
     padding: 20px 0;
@@ -85,7 +85,7 @@
     .cardsSection {
       .tourCards {
         .tourCardsContainer {
-          background-color: #70ab37;
+          // background-color: #70ab37;
           display: flex;
           padding: 10px;
           border-radius: 10px;
@@ -97,6 +97,7 @@
           }
           .content {
             padding: 20px;
+            max-width: 60%;
             .title {
               font-family: "Inter";
               font-style: normal;
@@ -145,6 +146,7 @@
             .PriceMention {
               font-size: 15px;
               font-weight: 700;
+              padding: 7px 0;
             }
           }
         }

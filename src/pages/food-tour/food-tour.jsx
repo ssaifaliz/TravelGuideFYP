@@ -1,7 +1,15 @@
 import React from "react";
 import { Navbar, Footer, Contactus } from "../../container";
 import "./food-tour.scss";
-import ellipseImage from "../../assets/food_tour/ellipse1.png";
+import ellipse1 from "../../assets/food_tour/ellipse1.png";
+import ellipse2 from "../../assets/food_tour/ellipse2.png";
+import ellipse3 from "../../assets/food_tour/ellipse3.png";
+import ellipse4 from "../../assets/food_tour/ellipse4.png";
+import ellipse5 from "../../assets/food_tour/ellipse5.png";
+import ellipse6 from "../../assets/food_tour/ellipse6.png";
+import ellipse7 from "../../assets/food_tour/ellipse7.png";
+import ellipse8 from "../../assets/food_tour/ellipse8.png";
+import ellipse9 from "../../assets/food_tour/ellipse9.png";
 import Form from "react-bootstrap/Form";
 import cardImage1 from "../../assets/food_tour/image1.png";
 import cardImage2 from "../../assets/food_tour/image2.png";
@@ -13,39 +21,39 @@ import Accordion from "react-bootstrap/Accordion";
 
 const widget = [
   {
-    img: ellipseImage,
+    img: ellipse1,
     text: "Street Food Tours",
   },
   {
-    img: ellipseImage,
+    img: ellipse2,
     text: "Food Tours",
   },
   {
-    img: ellipseImage,
+    img: ellipse3,
     text: "Private Sightseeing Tours",
   },
   {
-    img: ellipseImage,
+    img: ellipse4,
     text: "Food & Drink",
   },
   {
-    img: ellipseImage,
+    img: ellipse5,
     text: "Tours, Sightseeing & Cruises",
   },
   {
-    img: ellipseImage,
+    img: ellipse6,
     text: "Food Tours",
   },
   {
-    img: ellipseImage,
+    img: ellipse7,
     text: "Private Sightseeing Tours",
   },
   {
-    img: ellipseImage,
+    img: ellipse8,
     text: "Food & Drink",
   },
   {
-    img: ellipseImage,
+    img: ellipse9,
     text: "Tours, Sightseeing & Cruises",
   },
 ];
@@ -94,7 +102,7 @@ const FoodTour = () => (
       <div className="mainBanner"></div>
 
       <div className="Header">
-        <div className="heading">Top Pakistan Bike Tours</div>
+        <div className="heading">Top Pakistan Street Food Tours</div>
         <div className="container widgetContainer">
           {widget.map((item, index) => (
             <div className="widget" key={index}>
@@ -139,22 +147,22 @@ const FoodTour = () => (
           </div>
           <div className="col-md-9 cardsSection">
             <div className="tourCards">
-              {cards.map((item) => (
-                <div className="tourCardsContainer">
+              {cards.map((item ,index) => (
+                <div className="tourCardsContainer" style={{backgroundColor:index===0?"#70ab37":"#e3dfce"}}>
                   <div className="Image">
                     <img src={item.image} alt="" />
                   </div>
                   <div className="content">
-                    <div className="title">{item.title}</div>
-                    <div className="txt">{item.text}</div>
-                    <div className="time">
+                    <div className="title" style={{color:index===0?"#fff":"#000"}}>{item.title}</div>
+                    <div className="txt" style={{color:index===0?"#fff":"#000"}}>{item.text}</div>
+                    <div className="time" style={{color:index===0?"#fff":"#000"}}>
                       <FaRegClock /> {item.time}
                     </div>
-                    <div className="cancellation">
+                    <div className="cancellation" style={{color:index===0?"#fff":"#000"}}>
                       <FaCheck /> Free Cancellation
                     </div>
                   </div>
-                  <div className="price">
+                  <div className="price" style={{color:index===0?"#fff":"#000"}}>
                     from <br />
                     <div className="PriceMention">${item.price}</div>
                     Price varies by group size

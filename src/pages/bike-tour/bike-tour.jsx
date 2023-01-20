@@ -5,86 +5,94 @@ import {
   Contactus
 } from "../../container";
 import "./bike-tour.scss";
-import ellipseImage from "../../assets/food_tour/ellipse1.png";
 import Form from "react-bootstrap/Form";
-import cardImage1 from "../../assets/food_tour/image1.png";
-import cardImage2 from "../../assets/food_tour/image2.png";
-import cardImage3 from "../../assets/food_tour/image3.png";
-import cardImage4 from "../../assets/food_tour/image4.png";
-import cardImage5 from "../../assets/food_tour/image5.png";
+import ellipse1 from "../../assets/food_tour/ellipse1.png";
+import ellipse2 from "../../assets/food_tour/ellipse2.png";
+import ellipse3 from "../../assets/food_tour/ellipse3.png";
+import ellipse4 from "../../assets/food_tour/ellipse4.png";
+import ellipse5 from "../../assets/food_tour/ellipse5.png";
+import ellipse6 from "../../assets/food_tour/ellipse6.png";
+import ellipse7 from "../../assets/food_tour/ellipse7.png";
+import ellipse8 from "../../assets/food_tour/ellipse8.png";
+import ellipse9 from "../../assets/food_tour/ellipse9.png";
+import cardImage1 from "../../assets/food_tour/bikeImage1.png";
+import cardImage2 from "../../assets/food_tour/bikeImage2.png";
+import cardImage3 from "../../assets/food_tour/bikeImage3.png";
+import cardImage4 from "../../assets/food_tour/bikeImage4.png";
+import cardImage5 from "../../assets/food_tour/bikeImage5.png";
 import { FaRegClock, FaCheck } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
 
 const widget = [
   {
-    img: ellipseImage,
-    text: "Street Food Tours",
+    img: ellipse1,
+    text: "Bike Tours",
   },
   {
-    img: ellipseImage,
-    text: "Food Tours",
+    img: ellipse9,
+    text: "Deosai Bike Tours",
   },
   {
-    img: ellipseImage,
-    text: "Private Sightseeing Tours",
+    img: ellipse5,
+    text: "Naran Hunza Nalter Valley Tour",
   },
   {
-    img: ellipseImage,
-    text: "Food & Drink",
+    img: ellipse6,
+    text: "Baltistan Tour",
   },
   {
-    img: ellipseImage,
-    text: "Tours, Sightseeing & Cruises",
+    img: ellipse3,
+    text: "2 Hours Desert Tour",
   },
   {
-    img: ellipseImage,
-    text: "Food Tours",
+    img: ellipse2,
+    text: "China Bike Trip",
   },
   {
-    img: ellipseImage,
-    text: "Private Sightseeing Tours",
+    img: ellipse4,
+    text: "Crossing Deosai Plateau",
   },
   {
-    img: ellipseImage,
-    text: "Food & Drink",
+    img: ellipse8,
+    text: "KKH Hunza Valley ",
   },
   {
-    img: ellipseImage,
-    text: "Tours, Sightseeing & Cruises",
+    img: ellipse7,
+    text: "Heli Safari To Concordia (4750m)",
   },
 ];
 const cards = [
   {
     image: cardImage1,
-    title: "Street Food Tour of Lahore's Walled City",
+    title: "Crossing Deosai Plateau",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
     time: "3 to 4 hours",
     price: "80.00",
   },
   {
     image: cardImage2,
-    title: "Jalebi Khaana Peena Tour",
+    title: "Migrino Desert & Beach Off Road Tour",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
     time: "3 to 30 minutes",
     price: "20.52",
   },
   {
     image: cardImage3,
-    title: "Street Food Tour of Lahore's Walled City",
+    title: "Hindu Kush Bike",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
     time: "4 to 5 hours",
     price: "150.00",
   },
   {
     image: cardImage4,
-    title: "Street Food Tour of Lahore's Walled City",
+    title: "Deosai Bike",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
     time: "3 to 4 hours",
     price: "100.00",
   },
   {
     image: cardImage5,
-    title: "Street Food Tour of Lahore's Walled City",
+    title: "KKH Hunza Valley – China Bike Trip",
     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. more.....",
     time: "6 hours",
     price: "90.00",
@@ -97,7 +105,7 @@ const BikeTour = () => (
       <div className="mainBanner"></div>
 
       <div className="Header">
-        <div className="heading">Top Pakistan Street Food Tour</div>
+        <div className="heading">Top Pakistan Bike Tour</div>
         <div className="container widgetContainer">
           {widget.map((item, index) => (
             <div className="widget" key={index}>
@@ -142,24 +150,24 @@ const BikeTour = () => (
           </div>
           <div className="col-md-9 cardsSection">
             <div className="tourCards">
-              {cards.map((item) => (
-                <div className="tourCardsContainer">
+              {cards.map((item , index) => (
+                <div className="tourCardsContainer" style={{backgroundColor:index===0?"#70ab37":"#e3dfce"}}>
                   <div className="Image">
                     <img src={item.image} alt="" />
                   </div>
                   <div className="content">
-                    <div className="title">{item.title}</div>
-                    <div className="txt">{item.text}</div>
-                    <div className="time">
+                    <div className="title" style={{color:index===0?"#fff":"#000"}}>{item.title}</div>
+                    <div className="txt" style={{color:index===0?"#fff":"#000"}}>{item.text}</div>
+                    <div className="time" style={{color:index===0?"#fff":"#000"}}>
                       <FaRegClock /> {item.time}
                     </div>
-                    <div className="cancellation">
+                    <div className="cancellation" style={{color:index===0?"#fff":"#000"}}>
                       <FaCheck /> Free Cancellation
                     </div>
                   </div>
-                  <div className="price">
+                  <div className="price" style={{color:index===0?"#fff":"#000"}}>
                     from <br />
-                    <div className="PriceMention">${item.price}</div>
+                    <div className="PriceMention" style={{color:index===0?"#fff":"#000"}}>${item.price}</div>
                     Price varies by group size
                   </div>
                 </div>
