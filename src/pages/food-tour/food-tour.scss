@@ -90,6 +90,7 @@
           padding: 10px;
           border-radius: 10px;
           margin-bottom: 20px;
+
           .Image {
             img {
               border-radius: 5px;
@@ -147,6 +148,14 @@
               font-size: 15px;
               font-weight: 700;
               padding: 7px 0;
+            }
+          }
+          @media only screen and (max-width: 760px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .content{
+              max-width: 100%;
             }
           }
         }

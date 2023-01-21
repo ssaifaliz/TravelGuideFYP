@@ -1,0 +1,45 @@
+.tourPackages {
+  .mainBanner {
+    background-image: url("../../assets/food_tour/bikeTourBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+  }
+  .heading {
+    padding: 10px 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color: #313131;
+  }
+  .packages {
+    img{
+        width: 100%;
+    }
+    .title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 42px;
+      padding: 20px 0;
+      color: #313131;
+    }
+    h6 {
+      text-align: center;
+      padding: 10px 0;
+    }
+    .points {
+        p{
+            font-size: 20px;
+            font-weight: 700;
+        }
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+}

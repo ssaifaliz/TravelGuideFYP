@@ -151,7 +151,7 @@ const BikeTour = () => (
           <div className="col-md-9 cardsSection">
             <div className="tourCards">
               {cards.map((item , index) => (
-                <div className="tourCardsContainer" style={{backgroundColor:index===0?"#70ab37":"#e3dfce"}}>
+                <div className="tourCardsContainer" style={{backgroundColor:index===0?"#70ab37":"#e3dfce"}} key={index}>
                   <div className="Image">
                     <img src={item.image} alt="" />
                   </div>

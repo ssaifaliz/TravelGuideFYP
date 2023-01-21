@@ -111,6 +111,9 @@
 //   }
 // }
 .navbar {
+  .nav-link:focus, .nav-link:hover{
+    color: #70ab37;
+  } 
   .container {
     .burgerIcon {
       .dropdown-toggle::after {

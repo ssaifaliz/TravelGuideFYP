@@ -42,7 +42,11 @@ const Navbar = () => {
                   <li onClick={() => modalValueChange("traveler")} className="nav-item"><a style={{ cursor: 'pointer' }} data-toggle="modal" className="nav-link custom_nav_link">Travel Login</a></li>
                   <li onClick={() => modalValueChange("agent")} className="nav-item"><a style={{ cursor: 'pointer' }} data-toggle="modal" className="nav-link custom_nav_link">Agent Login</a></li>
                   <li onClick={() => modalValueChange("guide")} className="nav-item"><a style={{ cursor: 'pointer' }} data-toggle="modal" className="nav-link custom_nav_link">Guide Login</a></li>
-                  <li className="burgerIcon">
+                  <li className="nav-item"><Link to="/find-tour" className="nav-link custom_nav_link">Find A Tour</Link></li>
+                  <li className="nav-item"><Link to="/tour-packages" className="nav-link custom_nav_link">Tour Packages</Link></li>
+                  <li className="nav-item"><Link to="/bike-tour" className="nav-link custom_nav_link">Bike Tour</Link></li>
+                  <li className="nav-item"><Link to="/food-tour" className="nav-link custom_nav_link">Food Tour</Link></li>
+                  {/* <li className="burgerIcon">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">
                         <AiOutlineMenu />
@@ -52,7 +56,7 @@ const Navbar = () => {
                           <Link to="/find-tour">Find A Tour</Link>
                         </Dropdown.Item>
                         <Dropdown.Item>
-                          <Link to="/walking-tour">Walking Tour</Link>
+                          <Link to="/tour-packages">Tour Packages</Link>
                         </Dropdown.Item>
                         <Dropdown.Item>
                           <Link to="/bike-tour">Bike Tour</Link>
@@ -62,7 +66,7 @@ const Navbar = () => {
                         </Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
