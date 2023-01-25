@@ -1,0 +1,40 @@
+.HomePackages {
+  background: url(../../assets/hpToursBg.jpg) center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding: 40px 0;
+  .heading {
+    color: #f7943c;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #f7943c;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  img {
+    width: 100%;
+  }
+  h6 {
+    text-align: center;
+    padding: 10px 0;
+  }
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: underline;
+    letter-spacing: 0.05em;
+    color: #70ab43;
+    cursor: pointer;
+    text-align: center;
+    padding: 30px 0 0;
+    font-size: 20px;
+    &:hover{
+        color: #6a9f41;
+    }
+  }
+}
