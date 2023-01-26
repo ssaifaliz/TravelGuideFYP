@@ -10,6 +10,7 @@ import {
   Contactus,
   Footer,
 } from "../../container";
+import FloatBtn from "../../components/floatBtn/floatBtn"
 import "./home.scss";
 import group1 from "../../assets/packages/group3.png";
 import group2 from "../../assets/packages/group4.png";
@@ -32,6 +33,7 @@ const group = [
 
 const Home = () => (
   <div>
+    <FloatBtn />
     <Navbar />
     <Header />
     <Info />
