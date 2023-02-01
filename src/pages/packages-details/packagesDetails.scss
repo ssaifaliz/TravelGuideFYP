@@ -34,4 +34,19 @@
       }
     }
   }
+  .tabsSection {
+    padding: 50px 0 0;
+    button{
+      color: black !important;
+      font-weight: 700;
+    }
+    .nav-link {
+      color: #70ab43;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      color: white;
+      background-color: #70ab43;
+    }
+  }
 }
